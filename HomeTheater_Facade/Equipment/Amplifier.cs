@@ -14,14 +14,8 @@ namespace HomeTheater_Facade.Equipment
         public void Off()
         { Console.WriteLine("Выключение усилителя"); }
 
-        public void СontactDVD()
-        { Console.WriteLine("Свзязь с DVD-проигрывателем"); }
-
-        public void СontactCD()
-        { Console.WriteLine("Свзязь с CD-проигрывателем"); }
-
-        public void СontactTuner()
-        { Console.WriteLine("Свзязь с радио"); }
+        public void Сontact(string contact)
+        { Console.WriteLine($"Свзязь усилителя с {contact}"); }
 
         public void AmbientSoundOn()
         { Console.WriteLine("Режим окр. мира вкл"); }

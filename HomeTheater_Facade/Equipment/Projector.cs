@@ -14,8 +14,8 @@ namespace HomeTheater_Facade.Equipment
         public void Off()
         { Console.WriteLine("Выключение проектора"); }
 
-        public void СontactDVD()
-        { Console.WriteLine("Связь с DVD-проигрывателем"); }
+        public void Сontact(string contact)
+        { Console.WriteLine($"Связь проектора c {contact}"); }
 
         public void FullScreenOn()
         { Console.WriteLine("Полноэкранный режим вкл"); }

@@ -37,10 +37,10 @@ namespace HomeTheater_Facade
             screen.On();
             screen.Drop();
             projector.On();
-            projector.СontactDVD();
+            projector.Сontact("DVD-проигрыватель");
             projector.FullScreenOn();
             amplifier.On();
-            amplifier.СontactDVD();
+            amplifier.Сontact("DVD-проигрыватель");
             amplifier.AmbientSoundOn();
             amplifier.Volume(volume);
             dvd.On();
@@ -60,7 +60,7 @@ namespace HomeTheater_Facade
         public void OnCD(int volume)
         {
             amplifier.On();
-            amplifier.СontactCD();
+            amplifier.Сontact("CD-поигрыватель");
             amplifier.Volume(volume);
             sound.On();
             cd.On();
@@ -77,7 +77,7 @@ namespace HomeTheater_Facade
         public void OnTuner(int wave)
         {
             amplifier.On();
-            amplifier.СontactTuner();
+            amplifier.Сontact("радио");
             tuner.On();
             tuner.Wave(wave);
         }

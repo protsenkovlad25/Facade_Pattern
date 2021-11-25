@@ -48,7 +48,7 @@ namespace HomeTheater_Facade
                         control.OffCD();
                         break;
                     case 5:
-                        Console.WriteLine("Введите громкость для прослушивания радио (средняя: 5)");
+                        Console.WriteLine("Введите волну для прослушивания радио");
                         wave = Convert.ToInt32(Console.ReadLine());
                         control.OnTuner(wave);
                         break;
